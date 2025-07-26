@@ -1,0 +1,183 @@
+# Cursor Rules for Next.js Development with shadcn/ui
+
+## Core Development Principles
+
+- **ALWAYS develop production-ready code** - Never use placeholders or mocks
+- **NEVER write comments to explain code** - Write self-documenting code
+- **Use TypeScript for all React components** - Always include proper type definitions
+- **Follow Next.js App Router patterns** - Use 'use client' directive when needed
+- **Implement responsive designs** - All components must be mobile-friendly
+
+## File Structure & Naming
+
+- **Use kebab-case for file names**: `login-form.tsx`, `user-profile.tsx`
+- **Group related files in appropriate folders**: `components/`, `hooks/`, `utils/`, `types/`
+- **Create separate files for different concerns**: Split logic, types, and utilities
+- **Use descriptive component names**: `UserProfileCard` not `Card`
+
+## React & Next.js Best Practices
+
+- **Use shadcn/ui components** - Import from `@/components/ui/*`
+- **Create custom hooks for complex logic** - Separate business logic from UI
+- **Use Server Actions for form handling** - Implement proper error handling
+- **Provide default props for all components** - Next.js cannot infer props
+- **Use semantic HTML elements** - `main`, `header`, `nav`, `section`
+
+## Styling Guidelines
+
+- **Use Tailwind CSS for styling** - Leverage utility classes
+- **Avoid indigo/blue colors unless specified** - Use neutral or brand colors
+- **Implement dark mode support** - Use theme provider when needed
+- **Use responsive breakpoints** - Mobile-first approach
+- **Apply consistent spacing** - Use Tailwind spacing scale
+
+## Component Architecture
+
+- **Create reusable components** - Design for composition
+- **Use proper TypeScript interfaces** - Define props and state types
+- **Implement accessibility features** - ARIA labels, semantic HTML
+- **Handle loading and error states** - Provide user feedback
+- **Use proper event handling** - Prevent default behaviors when needed
+
+## State Management
+
+- **Use React hooks appropriately** - `useState`, `useEffect`, `useCallback`
+- **Implement proper cleanup** - Clear intervals, remove event listeners
+- **Use context for global state** - When prop drilling becomes excessive
+- **Handle async operations properly** - Use loading states and error boundaries
+
+## Performance Optimization
+
+- **Use `useCallback` for expensive operations** - Prevent unnecessary re-renders
+- **Implement proper memoization** - `React.memo` for pure components
+- **Optimize images** - Use Next.js Image component
+- **Lazy load components** - Use dynamic imports for large components
+- **Minimize bundle size** - Tree shake unused imports
+
+## API & Data Handling
+
+- **Use proper error handling** - Try-catch blocks, error boundaries
+- **Implement loading states** - Show spinners, skeletons
+- **Validate data** - Use Zod or similar for runtime validation
+- **Handle edge cases** - Empty states, network errors
+- **Use proper HTTP status codes** - Return appropriate responses
+
+## Security Best Practices
+
+- **Validate user input** - Sanitize data on both client and server
+- **Use environment variables** - Never hardcode sensitive data
+- **Implement proper authentication** - Use NextAuth or similar
+- **Handle CORS properly** - Configure allowed origins
+- **Use HTTPS in production** - Secure all communications
+
+## Testing Considerations
+
+- **Write testable code** - Separate business logic from UI
+- **Use proper naming conventions** - Descriptive test names
+- **Test edge cases** - Handle error scenarios
+- **Mock external dependencies** - Isolate unit tests
+- **Test accessibility** - Ensure screen reader compatibility
+
+## Code Quality
+
+- **Use consistent formatting** - Follow Prettier/ESLint rules
+- **Write self-documenting code** - Clear variable and function names
+- **Avoid code duplication** - Extract common patterns
+- **Use proper error messages** - Helpful debugging information
+- **Follow DRY principles** - Don't repeat yourself
+
+## Integration Guidelines
+
+- **Use Vercel AI SDK** - For AI/ML integrations
+- **Implement proper database patterns** - Use connection pooling
+- **Handle file uploads securely** - Validate file types and sizes
+- **Use proper caching strategies** - Implement Redis or similar
+- **Monitor performance** - Use analytics and error tracking
+
+## Accessibility Standards
+
+- **Use semantic HTML** - Proper heading hierarchy
+- **Add ARIA labels** - Screen reader support
+- **Ensure keyboard navigation** - Tab order and focus management
+- **Provide alt text** - For all images
+- **Test with screen readers** - Ensure compatibility
+
+## Deployment & Production
+
+- **Use environment variables** - Configure for different environments
+- **Implement proper logging** - Use structured logging
+- **Handle errors gracefully** - User-friendly error messages
+- **Optimize for Core Web Vitals** - LCP, FID, CLS
+- **Use CDN for static assets** - Optimize loading times
+
+## Database & Storage
+
+- **Use connection pooling** - For database connections
+- **Implement proper migrations** - Version control for schema changes
+- **Use transactions** - For data consistency
+- **Optimize queries** - Use indexes and proper joins
+- **Handle connection errors** - Implement retry logic
+
+## File Management
+
+- **Use proper file paths** - Relative imports when possible
+- **Organize assets** - Use public folder for static files
+- **Optimize images** - Use appropriate formats and sizes
+- **Handle file uploads** - Validate and process securely
+- **Use proper MIME types** - For file serving
+
+## Error Handling
+
+- **Use try-catch blocks** - Handle async operations
+- **Implement error boundaries** - Catch React errors
+- **Log errors properly** - Include context and stack traces
+- **Show user-friendly messages** - Don't expose internal errors
+- **Provide recovery options** - Retry mechanisms
+
+## Performance Monitoring
+
+- **Track Core Web Vitals** - Monitor LCP, FID, CLS
+- **Use performance budgets** - Set limits for bundle sizes
+- **Implement analytics** - Track user interactions
+- **Monitor error rates** - Set up alerting
+- **Optimize images** - Use WebP format when possible
+
+## Code Organization
+
+- **Group related functionality** - Keep related code together
+- **Use barrel exports** - Simplify imports
+- **Separate concerns** - UI, logic, data access
+- **Use consistent patterns** - Follow established conventions
+- **Document complex logic** - When necessary for maintainability
+
+## Security Considerations
+
+- **Validate all inputs** - Client and server-side validation
+- **Use HTTPS** - Secure all communications
+- **Implement rate limiting** - Prevent abuse
+- **Sanitize user data** - Prevent XSS attacks
+- **Use secure headers** - Implement CSP, HSTS
+
+## Testing Strategy
+
+- **Unit test business logic** - Test functions in isolation
+- **Integration test APIs** - Test complete workflows
+- **E2E test critical paths** - Test user journeys
+- **Test error scenarios** - Handle edge cases
+- **Performance test** - Ensure acceptable response times
+
+## Documentation
+
+- **Write clear README files** - Setup and usage instructions
+- **Document API endpoints** - Use OpenAPI/Swagger
+- **Explain complex algorithms** - When necessary
+- **Provide examples** - Show usage patterns
+- **Keep docs updated** - Sync with code changes
+
+## Code Review Guidelines
+
+- **Review for security** - Check for vulnerabilities
+- **Ensure accessibility** - Verify ARIA and semantic HTML
+- **Check performance** - Look for optimization opportunities
+- **Validate error handling** - Ensure proper error management
+- **Verify testing** - Ensure adequate test coverage
