@@ -1,0 +1,244 @@
+# Cursor Rules for Next.js Development with shadcn/ui in Monorepo
+
+## Core Development Principles
+
+- **ALWAYS develop production-ready code** - Never use placeholders or mocks
+- **NEVER write comments to explain code** - Write self-documenting code
+- **Use TypeScript for all React components** - Always include proper type definitions
+- **Follow Next.js App Router patterns** - Use 'use client' directive when needed
+- **Implement responsive designs** - All components must be mobile-friendly
+- **Think step-by-step before coding** - Use <Thinking> tags to plan solutions
+- **Provide complete implementations** - No partial solutions or TODOs
+
+## Monorepo & Package Management
+
+- **Use pnpm as package manager** - Leverage pnpm workspace features
+- **Follow Turborepo conventions** - Use turbo.json for build pipelines
+- **Organize apps in `/apps` directory** - Separate applications clearly
+- **Organize packages in `/packages` directory** - Shared libraries and components
+- **Use workspace dependencies** - Reference packages with `workspace:*`
+- **Maintain consistent package.json structure** - Across all workspaces
+- **Use pnpm-lock.yaml** - Never commit node_modules
+
+## File Structure & Naming
+
+- **Use kebab-case for file names**: `login-form.tsx`, `user-profile.tsx`
+- **Group related files in appropriate folders**: `components/`, `hooks/`, `utils/`, `types/`
+- **Create separate files for different concerns**: Split logic, types, and utilities
+- **Use descriptive component names**: `UserProfileCard` not `Card`
+- **Follow monorepo structure**: `apps/web/`, `apps/docs/`, `packages/ui/`
+
+## React & Next.js Best Practices
+
+- **Use shadcn/ui components** - Import from `@/components/ui/*`
+- **Create custom hooks for complex logic** - Separate business logic from UI
+- **Use Server Actions for form handling** - Implement proper error handling
+- **Provide default props for all components** - Next.js cannot infer props
+- **Use semantic HTML elements** - `main`, `header`, `nav`, `section`
+- **Use 'use client' directive appropriately** - Only when client-side features needed
+
+## Styling Guidelines
+
+- **Use Tailwind CSS for styling** - Leverage utility classes
+- **Avoid indigo/blue colors unless specified** - Use neutral or brand colors
+- **Implement dark mode support** - Use theme provider when needed
+- **Use responsive breakpoints** - Mobile-first approach
+- **Apply consistent spacing** - Use Tailwind spacing scale
+- **Use CSS modules when needed** - For component-specific styles
+
+## Component Architecture
+
+- **Create reusable components** - Design for composition
+- **Use proper TypeScript interfaces** - Define props and state types
+- **Implement accessibility features** - ARIA labels, semantic HTML
+- **Handle loading and error states** - Provide user feedback
+- **Use proper event handling** - Prevent default behaviors when needed
+- **Export components from packages** - For cross-app sharing
+
+## State Management
+
+- **Use React hooks appropriately** - `useState`, `useEffect`, `useCallback`
+- **Implement proper cleanup** - Clear intervals, remove event listeners
+- **Use context for global state** - When prop drilling becomes excessive
+- **Handle async operations properly** - Use loading states and error boundaries
+- **Use Zustand for complex state** - When context becomes unwieldy
+
+## Performance Optimization
+
+- **Use `useCallback` for expensive operations** - Prevent unnecessary re-renders
+- **Implement proper memoization** - `React.memo` for pure components
+- **Optimize images** - Use Next.js Image component
+- **Lazy load components** - Use dynamic imports for large components
+- **Minimize bundle size** - Tree shake unused imports
+- **Use Turborepo caching** - Leverage build caching for faster builds
+
+## API & Data Handling
+
+- **Use proper error handling** - Try-catch blocks, error boundaries
+- **Implement loading states** - Show spinners, skeletons
+- **Validate data** - Use Zod or similar for runtime validation
+- **Handle edge cases** - Empty states, network errors
+- **Use proper HTTP status codes** - Return appropriate responses
+- **Use React Query/SWR** - For server state management
+
+## Security Best Practices
+
+- **Validate user input** - Sanitize data on both client and server
+- **Use environment variables** - Never hardcode sensitive data
+- **Implement proper authentication** - Use NextAuth or similar
+- **Handle CORS properly** - Configure allowed origins
+- **Use HTTPS in production** - Secure all communications
+- **Use .env.local for secrets** - Never commit sensitive data
+
+## Testing Considerations
+
+- **Write testable code** - Separate business logic from UI
+- **Use proper naming conventions** - Descriptive test names
+- **Test edge cases** - Handle error scenarios
+- **Mock external dependencies** - Isolate unit tests
+- **Test accessibility** - Ensure screen reader compatibility
+- **Use Vitest for unit tests** - Fast and modern testing framework
+
+## Code Quality
+
+- **Use consistent formatting** - Follow Prettier/ESLint rules
+- **Write self-documenting code** - Clear variable and function names
+- **Avoid code duplication** - Extract common patterns
+- **Use proper error messages** - Helpful debugging information
+- **Follow DRY principles** - Don't repeat yourself
+- **Use shared ESLint config** - Across all workspaces
+
+## Integration Guidelines
+
+- **Use Vercel AI SDK** - For AI/ML integrations
+- **Implement proper database patterns** - Use connection pooling
+- **Handle file uploads securely** - Validate file types and sizes
+- **Use proper caching strategies** - Implement Redis or similar
+- **Monitor performance** - Use analytics and error tracking
+- **Use shared packages** - For common utilities and components
+
+## Accessibility Standards
+
+- **Use semantic HTML** - Proper heading hierarchy
+- **Add ARIA labels** - Screen reader support
+- **Ensure keyboard navigation** - Tab order and focus management
+- **Provide alt text** - For all images
+- **Test with screen readers** - Ensure compatibility
+- **Use proper color contrast** - Meet WCAG guidelines
+
+## Deployment & Production
+
+- **Use environment variables** - Configure for different environments
+- **Implement proper logging** - Use structured logging
+- **Handle errors gracefully** - User-friendly error messages
+- **Optimize for Core Web Vitals** - LCP, FID, CLS
+- **Use CDN for static assets** - Optimize loading times
+- **Use Vercel for deployment** - Leverage Turborepo integration
+
+## Database & Storage
+
+- **Use connection pooling** - For database connections
+- **Implement proper migrations** - Version control for schema changes
+- **Use transactions** - For data consistency
+- **Optimize queries** - Use indexes and proper joins
+- **Handle connection errors** - Implement retry logic
+- **Use Prisma ORM** - For type-safe database access
+
+## File Management
+
+- **Use proper file paths** - Relative imports when possible
+- **Organize assets** - Use public folder for static files
+- **Optimize images** - Use appropriate formats and sizes
+- **Handle file uploads** - Validate and process securely
+- **Use proper MIME types** - For file serving
+- **Share assets across apps** - Use packages for common assets
+
+## Error Handling
+
+- **Use try-catch blocks** - Handle async operations
+- **Implement error boundaries** - Catch React errors
+- **Log errors properly** - Include context and stack traces
+- **Show user-friendly messages** - Don't expose internal errors
+- **Provide recovery options** - Retry mechanisms
+- **Use error tracking services** - Sentry or similar
+
+## Performance Monitoring
+
+- **Track Core Web Vitals** - Monitor LCP, FID, CLS
+- **Use performance budgets** - Set limits for bundle sizes
+- **Implement analytics** - Track user interactions
+- **Monitor error rates** - Set up alerting
+- **Optimize images** - Use WebP format when possible
+- **Use Turborepo analytics** - Monitor build performance
+
+## Code Organization
+
+- **Group related functionality** - Keep related code together
+- **Use barrel exports** - Simplify imports
+- **Separate concerns** - UI, logic, data access
+- **Use consistent patterns** - Follow established conventions
+- **Document complex logic** - When necessary for maintainability
+- **Share types across packages** - Use shared type definitions
+
+## Security Considerations
+
+- **Validate all inputs** - Client and server-side validation
+- **Use HTTPS** - Secure all communications
+- **Implement rate limiting** - Prevent abuse
+- **Sanitize user data** - Prevent XSS attacks
+- **Use secure headers** - Implement CSP, HSTS
+- **Use Content Security Policy** - Prevent XSS and injection attacks
+
+## Testing Strategy
+
+- **Unit test business logic** - Test functions in isolation
+- **Integration test APIs** - Test complete workflows
+- **E2E test critical paths** - Test user journeys
+- **Test error scenarios** - Handle edge cases
+- **Performance test** - Ensure acceptable response times
+- **Use Playwright for E2E** - Modern and reliable testing
+
+## Documentation
+
+- **Write clear README files** - Setup and usage instructions
+- **Document API endpoints** - Use OpenAPI/Swagger
+- **Explain complex algorithms** - When necessary
+- **Provide examples** - Show usage patterns
+- **Keep docs updated** - Sync with code changes
+- **Document workspace setup** - pnpm and Turborepo configuration
+
+## Code Review Guidelines
+
+- **Review for security** - Check for vulnerabilities
+- **Ensure accessibility** - Verify ARIA and semantic HTML
+- **Check performance** - Look for optimization opportunities
+- **Validate error handling** - Ensure proper error management
+- **Verify testing** - Ensure adequate test coverage
+- **Check monorepo consistency** - Ensure shared patterns are followed
+
+## Turborepo Specific Guidelines
+
+- **Use turbo.json for build configuration** - Define build, dev, and test tasks
+- **Leverage build caching** - Configure proper cache keys
+- **Use parallel execution** - Optimize build times
+- **Configure dependencies correctly** - Ensure proper build order
+- **Use turbo prune** - For deployment optimization
+- **Monitor build performance** - Use turbo analytics
+
+## pnpm Specific Guidelines
+
+- **Use workspace protocol** - `workspace:*` for internal dependencies
+- **Leverage pnpm store** - Efficient package storage
+- **Use pnpm scripts** - For workspace management
+- **Configure .npmrc** - For workspace settings
+- **Use pnpm audit** - For security checks
+- **Leverage pnpm add** - With workspace flags when needed
+
+## Development Workflow
+
+- **Use conventional commits** - For better changelog generation
+- **Implement pre-commit hooks** - Using husky and lint-staged
+- **Use semantic versioning** - For package releases
+- **Automate releases** - Using changesets or similar
+- **Use GitHub Actions** - For CI/CD pipelines
+- **Implement feature flags** - For safe deployments
