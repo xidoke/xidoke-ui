@@ -1,6 +1,6 @@
 {
-  "$schema": "https://turborepo.com/schema.json",
-  "ui": "tui",
+ "$schema": "./node_modules/turbo/schema.json",
+  "ui": "stream",
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
@@ -11,7 +11,8 @@
       "dependsOn": ["^lint"]
     },
     "check-types": {
-      "dependsOn": ["^check-types"]
+      "dependsOn": ["^check-types"],
+      "inputs": ["**/*.{ts,tsx}"]
     },
     "dev": {
       "cache": false,
