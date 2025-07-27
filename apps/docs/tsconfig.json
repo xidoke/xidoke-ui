@@ -1,18 +1,5 @@
 {
-  "extends": "@xidoke/typescript-config/nextjs.json",
-  "compilerOptions": {
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
-  },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "next-env.d.ts",
-    "next.config.js",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": ["node_modules"]
+  "extends": "@xidoke/typescript-config/react-library.json",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
 }
