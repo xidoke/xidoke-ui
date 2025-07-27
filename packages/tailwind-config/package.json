@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "type": "module",
   "private": true,
+  "scripts": {
+    "lint": "echo 'No linting needed for tailwind config package'"
+  },
   "exports": {
     ".": "./shared-styles.css",
     "./postcss": "./postcss.config.js"
