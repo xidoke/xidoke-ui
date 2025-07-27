@@ -36,6 +36,9 @@ const config = {
   docs: {
     autodocs: true,
   },
+  build: {
+    outDir: 'storybook-static',
+  },
 };
 
 export default config;
