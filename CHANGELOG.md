@@ -13,7 +13,37 @@ và dự án này tuân thủ [Semantic Versioning](https://semver.org/lang/vi/)
 - Add API endpoints
 - Create admin dashboard
 
-## [1.1.0] - 2024-01-27
+## [1.3.0] - 2025-07-27
+
+### Added
+- **ES Modules Support**: Full ES modules integration across all packages
+- **Tailwind CSS v4**: Latest version with improved performance and features
+- **Centralized Tailwind Config**: `@xidoke/tailwind-config` package for shared styling
+- **Storybook Integration**: Component documentation with ES modules support
+- **Enhanced UI Components**: Updated Button, Card, and Code components with Tailwind v4
+- **PostCSS Configuration**: Centralized PostCSS setup for Tailwind CSS v4
+
+### Changed
+- **Package Structure**: All packages now use ES modules (`"type": "module"`)
+- **Tailwind Integration**: Migrated from Tailwind CSS v3 to v4.1.11
+- **Import System**: Updated to use `@import "tailwindcss"` syntax (v4)
+- **Component Styling**: UI components now use centralized Tailwind classes
+- **Build Configuration**: Optimized for ES modules and Tailwind v4
+
+### Fixed
+- **Module Resolution**: Fixed Storybook alias configuration for `@xidoke/ui`
+- **Package Exports**: Updated UI package exports for proper module resolution
+- **ESLint Configuration**: Resolved ES modules compatibility issues
+- **Build Process**: Fixed PostCSS configuration for Tailwind v4
+
+### Technical
+- **ES Modules**: Added `"type": "module"` to all package.json files
+- **Tailwind v4**: Integrated `@tailwindcss/postcss` plugin
+- **Shared Styles**: Created `packages/tailwind-config/shared-styles.css`
+- **Storybook Config**: Updated `.storybook/main.js` for ES modules
+- **Git Ignore**: Added `storybook-static/` to exclude build output
+
+## [1.1.0] - 2025-07-27
 
 ### Added
 - Personal branding with `@xidoke` namespace
@@ -39,7 +69,7 @@ và dự án này tuân thủ [Semantic Versioning](https://semver.org/lang/vi/)
 - Added `scripts/bump-version.sh` - Automated version bumping across monorepo
 - Added `CHANGELOG.md` - Version history tracking
 
-## [1.0.0] - 2024-01-27
+## [1.0.0] - 2025-07-27
 
 ### Added
 - Initial monorepo setup with Turborepo
