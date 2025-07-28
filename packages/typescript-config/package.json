@@ -1,11 +1,8 @@
 {
   "name": "@xidoke/typescript-config",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "license": "MIT",
-  "scripts": {
-    "lint": "echo 'No linting needed for typescript config package'"
-  },
   "publishConfig": {
     "access": "public"
   }
