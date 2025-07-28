@@ -12,12 +12,13 @@
     "check-types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@xidoke/eslint-config": "workspace:*",
-    "@xidoke/typescript-config": "workspace:*",
     "@types/node": "^22.15.3",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",
+    "@xidoke/eslint-config": "workspace:*",
+    "@xidoke/typescript-config": "workspace:*",
     "eslint": "^9.31.0",
+    "@xidoke/tailwind-config": "workspace:*",
     "typescript": "5.8.2"
   },
   "dependencies": {

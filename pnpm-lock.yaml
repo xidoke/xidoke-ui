@@ -153,6 +153,9 @@ importers:
       '@xidoke/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
+      '@xidoke/tailwind-config':
+        specifier: workspace:*
+        version: link:../tailwind-config
       '@xidoke/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
