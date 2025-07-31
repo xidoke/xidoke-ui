@@ -1,5 +1,5 @@
 import type {Meta, StoryObj} from '@storybook/react';
-import {Button} from '@xidoke/ui/button.polaris';
+import Button from '@xidoke/ui/button';
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -21,8 +21,7 @@ export const Primary: Story = {
   args: {
     children: 'Hello',
     className: 'bg-blue-500 text-white',
-    size: 'medium',
-    textAlign: 'center',
+    size: 'md',
   },
 };
 
@@ -30,9 +29,12 @@ export const Secondary: Story = {
   render: (props) => <Button {...props}></Button>,
   name: 'Button secondary',
   args: {
+    // === custom props ===
     children: 'Hello',
     className: 'bg-blue-500 text-white',
-    size: 'medium',
-    textAlign: 'center',
+    size: 'md',
+    variant: 'outline-danger',
+    disabled: false,
+    loading: false,
   },
 };

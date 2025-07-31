@@ -9,6 +9,7 @@ const config = {
   addons: [
     getAbsolutePath('@storybook/addon-links'),
     getAbsolutePath('@storybook/addon-essentials'),
+    getAbsolutePath('@storybook/addon-actions'),
   ],
   framework: {
     name: getAbsolutePath('@storybook/react-vite'),
@@ -25,8 +26,8 @@ const config = {
       resolve: {
         alias: [
           {
-            find: '@xidoke/ui',
-            replacement: resolve(__dirname, '../../../packages/ui/src'),
+            find: 'ui',
+            replacement: resolve(__dirname, '../../../packages/ui/'),
           },
         ],
       },
@@ -35,9 +36,6 @@ const config = {
 
   docs: {
     autodocs: true,
-  },
-  build: {
-    outDir: 'storybook-static',
   },
 };
 
