@@ -12,6 +12,150 @@
   }
 }
 
+@theme {
+  /* 🎨 PRIMARY */
+  --color-custom-primary-0: rgb(255, 255, 255);
+  --color-custom-primary-10: rgb(236, 241, 255);
+  --color-custom-primary-20: rgb(217, 228, 255);
+  --color-custom-primary-30: rgb(197, 214, 255);
+  --color-custom-primary-40: rgb(178, 200, 255);
+  --color-custom-primary-50: rgb(159, 187, 255);
+  --color-custom-primary-60: rgb(140, 173, 255);
+  --color-custom-primary-70: rgb(121, 159, 255);
+  --color-custom-primary-80: rgb(101, 145, 255);
+  --color-custom-primary-90: rgb(82, 132, 255);
+  --color-custom-primary-100: rgb(63, 118, 255);
+  --color-custom-primary-200: rgb(57, 106, 230);
+  --color-custom-primary-300: rgb(50, 94, 204);
+  --color-custom-primary-400: rgb(44, 83, 179);
+  --color-custom-primary-500: rgb(38, 71, 153);
+  --color-custom-primary-600: rgb(32, 59, 128);
+  --color-custom-primary-700: rgb(25, 47, 102);
+  --color-custom-primary-800: rgb(19, 35, 76);
+  --color-custom-primary-900: rgb(13, 24, 51);
+  --color-custom-primary-1000: rgb(0, 0, 0);
+
+  /* 🎨 BACKGROUND */
+  --color-custom-background-0: rgb(255, 255, 255);
+  --color-custom-background-10: rgb(250, 250, 250);
+  --color-custom-background-20: rgb(245, 245, 245);
+  --color-custom-background-30: rgb(240, 240, 240);
+  --color-custom-background-40: rgb(235, 235, 235);
+  --color-custom-background-50: rgb(230, 230, 230);
+  --color-custom-background-60: rgb(225, 225, 225);
+  --color-custom-background-70: rgb(220, 220, 220);
+  --color-custom-background-80: rgb(232, 232, 232);
+  --color-custom-background-90: rgb(247, 247, 247);
+  --color-custom-background-100: rgb(255, 255, 255);
+  --color-custom-background-200: rgb(240, 240, 240);
+  --color-custom-background-300: rgb(230, 230, 230);
+  --color-custom-background-400: rgb(220, 220, 220);
+  --color-custom-background-500: rgb(210, 210, 210);
+  --color-custom-background-600: rgb(200, 200, 200);
+  --color-custom-background-700: rgb(190, 190, 190);
+  --color-custom-background-800: rgb(180, 180, 180);
+  --color-custom-background-900: rgb(170, 170, 170);
+  --color-custom-background-1000: rgb(0, 0, 0);
+  --color-custom-background-overlay: rgba(0, 0, 0, 0.25);
+  --color-custom-background-primary: rgb(63, 118, 255);
+  --color-custom-background-error: rgb(220, 62, 66);
+
+  /* 🎨 TEXT */
+  --color-custom-text-0: rgb(255, 255, 255);
+  --color-custom-text-10: rgb(250, 250, 250);
+  --color-custom-text-20: rgb(240, 240, 240);
+  --color-custom-text-30: rgb(230, 230, 230);
+  --color-custom-text-40: rgb(220, 220, 220);
+  --color-custom-text-50: rgb(210, 210, 210);
+  --color-custom-text-60: rgb(200, 200, 200);
+  --color-custom-text-70: rgb(190, 190, 190);
+  --color-custom-text-80: rgb(180, 180, 180);
+  --color-custom-text-90: rgb(170, 170, 170);
+  --color-custom-text-100: rgb(23, 23, 23);
+  --color-custom-text-200: rgb(58, 58, 58);
+  --color-custom-text-300: rgb(82, 82, 82);
+  --color-custom-text-350: rgb(100, 100, 100);
+  --color-custom-text-400: rgb(163, 163, 163);
+  --color-custom-text-500: rgb(150, 150, 150);
+  --color-custom-text-600: rgb(140, 140, 140);
+  --color-custom-text-700: rgb(130, 130, 130);
+  --color-custom-text-800: rgb(120, 120, 120);
+  --color-custom-text-900: rgb(110, 110, 110);
+  --color-custom-text-1000: rgb(0, 0, 0);
+  --color-custom-text-primary: rgb(63, 118, 255);
+  --color-custom-text-error: rgb(220, 62, 66);
+
+  /* 🎨 BORDER */
+  --color-custom-border-0: rgb(255, 255, 255);
+  --color-custom-border-100: rgb(245, 245, 245);
+  --color-custom-border-200: rgb(229, 229, 229);
+  --color-custom-border-300: rgb(212, 212, 212);
+  --color-custom-border-400: rgb(185, 185, 185);
+  --color-custom-border-1000: rgb(0, 0, 0);
+  --color-custom-border-primary: rgb(63, 118, 255);
+  --color-custom-border-error: rgb(220, 62, 66);
+
+  /* 🎨 ERROR */
+  --color-custom-error-10: rgb(255, 240, 240);
+  --color-custom-error-20: rgb(255, 220, 220);
+  --color-custom-error-30: rgb(255, 200, 200);
+  --color-custom-error-100: rgb(220, 62, 66);
+  --color-custom-error-200: rgb(200, 50, 50);
+  --color-custom-error-500: rgb(180, 40, 40);
+
+  /* 🎨 MISC */
+  --color-custom-backdrop: rgba(0, 0, 0, 0.25);
+  --color-custom-scrollbar-neutral: rgba(96, 100, 108, 0.1);
+  --color-custom-scrollbar-hover: rgba(96, 100, 108, 0.25);
+  --color-custom-scrollbar-active: rgba(96, 100, 108, 0.7);
+
+  /* 🎨 SUBSCRIPTION */
+  --color-custom-subscription-free-200: rgb(100, 200, 100);
+  --color-custom-subscription-free-400: rgb(80, 180, 80);
+  --color-custom-subscription-one-200: rgb(100, 150, 200);
+  --color-custom-subscription-one-400: rgb(80, 130, 180);
+  --color-custom-subscription-pro-200: rgb(200, 100, 200);
+  --color-custom-subscription-pro-400: rgb(180, 80, 180);
+  --color-custom-subscription-business-200: rgb(200, 150, 100);
+  --color-custom-subscription-business-400: rgb(180, 130, 80);
+  --color-custom-subscription-enterprise-200: rgb(150, 200, 100);
+  --color-custom-subscription-enterprise-400: rgb(130, 180, 80);
+
+  /* 🎨 ONBOARDING */
+  --color-custom-onboarding-background-100: rgb(236, 241, 255);
+  --color-custom-onboarding-background-200: rgb(255, 255, 255);
+  --color-custom-onboarding-background-300: rgb(236, 241, 255);
+  --color-custom-onboarding-background-400: rgb(177, 206, 250);
+  --color-custom-onboarding-text-100: rgb(23, 23, 23);
+  --color-custom-onboarding-text-200: rgb(58, 58, 58);
+  --color-custom-onboarding-text-300: rgb(82, 82, 82);
+  --color-custom-onboarding-text-400: rgb(163, 163, 163);
+  --color-custom-onboarding-border-100: rgb(229, 229, 229);
+  --color-custom-onboarding-border-200: rgb(217, 228, 255);
+  --color-custom-onboarding-border-300: rgba(229, 229, 229, 0.5);
+
+  /* 🎨 TOAST */
+  --color-custom-toast-success-text: rgb(62, 155, 79);
+  --color-custom-toast-error-text: rgb(220, 62, 66);
+  --color-custom-toast-warning-text: rgb(255, 186, 24);
+  --color-custom-toast-info-text: rgb(51, 88, 212);
+  --color-custom-toast-loading-text: rgb(28, 32, 36);
+  --color-custom-toast-secondary-text: rgb(128, 131, 141);
+  --color-custom-toast-tertiary-text: rgb(96, 100, 108);
+
+  --color-custom-toast-success-background: rgb(253, 253, 254);
+  --color-custom-toast-error-background: rgb(255, 252, 252);
+  --color-custom-toast-warning-background: rgb(254, 253, 251);
+  --color-custom-toast-info-background: rgb(253, 253, 254);
+  --color-custom-toast-loading-background: rgb(253, 253, 254);
+
+  --color-custom-toast-success-border: rgb(218, 241, 219);
+  --color-custom-toast-error-border: rgb(255, 219, 220);
+  --color-custom-toast-warning-border: rgb(255, 247, 194);
+  --color-custom-toast-info-border: rgb(210, 222, 255);
+  --color-custom-toast-loading-border: rgb(224, 225, 230);
+}
+
 @layer base {
   html {
     font-family: 'Inter', sans-serif;
