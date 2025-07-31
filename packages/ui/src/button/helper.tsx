@@ -30,10 +30,10 @@ enum buttonSizeStyling {
 }
 
 enum buttonIconStyling {
-  sm = 'h-3 w-3 flex justify-center items-center overflow-hidden my-0.5 flex-shrink-0',
-  md = 'h-3.5 w-3.5 flex justify-center items-center overflow-hidden my-0.5 flex-shrink-0',
-  lg = 'h-4 w-4 flex justify-center items-center overflow-hidden my-0.5 flex-shrink-0',
-  xl = 'h-4 w-4 flex justify-center items-center overflow-hidden my-0.5 flex-shrink-0 ',
+  sm = 'h-3 w-3 flex justify-center items-center overflow-hidden my-0.5 shrink-0',
+  md = 'h-3.5 w-3.5 flex justify-center items-center overflow-hidden my-0.5 shrink-0',
+  lg = 'h-4 w-4 flex justify-center items-center overflow-hidden my-0.5 shrink-0',
+  xl = 'h-4 w-4 flex justify-center items-center overflow-hidden my-0.5 shrink-0 ',
 }
 
 export const buttonStyling: IButtonStyling = {
@@ -72,31 +72,31 @@ export const buttonStyling: IButtonStyling = {
     default: `text-white bg-red-500`,
     hover: ` hover:bg-red-600`,
     pressed: `focus:text-red-200 focus:bg-red-600`,
-    disabled: `cursor-not-allowed !bg-red-300`,
+    disabled: `cursor-not-allowed bg-red-300!`,
   },
   'accent-danger': {
     default: `text-red-500 bg-red-50`,
     hover: `hover:text-red-600 hover:bg-red-100`,
     pressed: `focus:text-red-500 focus:bg-red-100`,
-    disabled: `cursor-not-allowed !text-red-300`,
+    disabled: `cursor-not-allowed text-red-300!`,
   },
   'outline-danger': {
     default: `text-red-500 bg-transparent border border-red-500`,
     hover: `hover:text-red-400 hover:border-red-400`,
     pressed: `focus:text-red-400 focus:border-red-400`,
-    disabled: `cursor-not-allowed !text-red-300 !border-red-300`,
+    disabled: `cursor-not-allowed text-red-300! border-red-300!`,
   },
   'link-danger': {
     default: `text-red-500 bg-custom-background-100`,
     hover: `hover:text-red-400`,
     pressed: `focus:text-red-400`,
-    disabled: `cursor-not-allowed !text-red-300`,
+    disabled: `cursor-not-allowed text-red-300!`,
   },
   'tertiary-danger': {
     default: `text-red-500 bg-custom-background-100 border border-red-200`,
     hover: `hover:bg-red-50 hover:border-red-300`,
     pressed: `focus:text-red-400`,
-    disabled: `cursor-not-allowed !text-red-300`,
+    disabled: `cursor-not-allowed text-red-300!`,
   },
   'link-neutral': {
     default: `text-custom-text-300`,
