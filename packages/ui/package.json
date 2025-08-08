@@ -15,7 +15,8 @@
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
     "check-types": "tsc --noEmit",
-    "build": "npx @tailwindcss/cli -i ./styles/globals.css -o ./styles/output.css --watch"
+    "watch": "npx @tailwindcss/cli -i ./styles/globals.css -o ./styles/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./styles/globals.css -o ./styles/output.css"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
