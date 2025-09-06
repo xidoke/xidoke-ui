@@ -358,7 +358,6 @@ Tạo file `CHANGELOG.md`:
 - New authentication system
 
 ### Fixed
-- ESLint configuration issues
 - TypeScript compilation errors
 
 ## [1.1.0] - 2024-01-10

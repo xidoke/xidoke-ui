@@ -1,3 +1,3 @@
-import {postcssConfig} from '@xidoke/tailwind-config/postcss';
+import { postcssConfig } from "@xidoke/tailwind-config/postcss";
 
 export default postcssConfig;

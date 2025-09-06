@@ -33,7 +33,6 @@ và dự án này tuân thủ [Semantic Versioning](https://semver.org/lang/vi/)
 ### Fixed
 - **Module Resolution**: Fixed Storybook alias configuration for `@xidoke/ui`
 - **Package Exports**: Updated UI package exports for proper module resolution
-- **ESLint Configuration**: Resolved ES modules compatibility issues
 - **Build Process**: Fixed PostCSS configuration for Tailwind v4
 
 ### Technical

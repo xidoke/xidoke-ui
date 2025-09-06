@@ -10,7 +10,7 @@ A production-ready monorepo built with **Turborepo**, **Next.js 15**, **ES Modul
 - **🔧 TypeScript**: Strict type checking throughout the codebase
 - **📚 Storybook**: Component documentation and development
 - **🎯 shadcn/ui**: Modern, accessible React components
-- **⚙️ ESLint & Prettier**: Code quality and formatting
+- **⚙️ Biome**: Code quality and formatting
 - **📱 Next.js 15**: Latest App Router with React 19
 
 ## 📁 Project Structure
@@ -22,7 +22,7 @@ xidoke-ui/
 │   └── docs/               # Storybook documentation
 ├── packages/
 │   ├── ui/                 # Shared React components
-│   ├── eslint-config/      # ESLint configurations
+
 │   ├── typescript-config/  # TypeScript configurations
 │   └── tailwind-config/    # Centralized Tailwind CSS config
 ├── scripts/                # Build and deployment scripts
@@ -46,8 +46,6 @@ xidoke-ui/
 
 ### Development Tools
 
-- **ESLint** - Code linting with custom configs
-- **Prettier** - Code formatting
 - **Storybook** - Component documentation
 - **pnpm** - Fast, disk space efficient package manager
 
@@ -137,11 +135,6 @@ turbo dev --filter=docs # Start Storybook
   - Button, Card, Code components
   - Tailwind CSS v4 styling
   - ES modules exports
-
-- **`@xidoke/eslint-config`** - ESLint configurations
-  - Next.js, React, TypeScript rules
-  - Turbo plugin integration
-  - Prettier integration
 
 - **`@xidoke/typescript-config`** - TypeScript configurations
   - Base, Next.js, React library configs

@@ -1,24 +1,24 @@
 {
-  "joy": {
-    "color": {
-      "base": {
-        "primary": {
-          "value": "#61dafb",
-          "type": "color"
-        },
-        "secondary": {
-          "value": "#fc7aa5",
-          "type": "color"
-        }
-      },
-      "text": {
-        "value": "#666666",
-        "type": "color"
-      },
-      "background": {
-        "value": "#EEEEEE",
-        "type": "color"
-      }
-    }
-  }
+	"joy": {
+		"color": {
+			"base": {
+				"primary": {
+					"value": "#61dafb",
+					"type": "color"
+				},
+				"secondary": {
+					"value": "#fc7aa5",
+					"type": "color"
+				}
+			},
+			"text": {
+				"value": "#666666",
+				"type": "color"
+			},
+			"background": {
+				"value": "#EEEEEE",
+				"type": "color"
+			}
+		}
+	}
 }

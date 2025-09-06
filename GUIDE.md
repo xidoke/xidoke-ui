@@ -30,12 +30,10 @@ Việc viết changelog nên được thực hiện trước, đặc biệt là 
         *   **Đổi API hoặc breaking UI**: (như thay đổi API của button, đổi rule gây breaking, đổi/remove hàm utils,...) [3 - Changed, Removed, Deprecated].
     *   **MINOR**: Thêm chức năng mới có tương thích ngược, ví dụ:
         *   **Thêm UI** mới [3 - Added].
-        *   **Thêm rule eslint** mới [3 - Added].
         *   **Thêm package** mới [3 - Added].
         *   **Thêm cấu hình mới** (như tailwind, ts) [3 - Added].
     *   **PATCH**: Sửa lỗi có tương thích ngược, ví dụ:
         *   **Sửa bug trong component** [3 - Fixed].
-        *   **Sửa bug cấu hình eslint** [3 - Fixed].
         *   **Các bug nhỏ khác** [3 - Fixed].
 *   Khi có nhiều ý tưởng, nên sắp xếp chúng theo nhóm và tách nhỏ version. Không nhất thiết buộc mỗi branch sẽ là 1 tag, nhưng mỗi một tag nhỏ nên tập trung vào một vài thay đổi liên quan.
 *   **Tránh sử dụng GitHub Releases như một changelog chính thức duy nhất** vì chúng tạo ra một changelog không di động (non-portable) và chỉ có thể hiển thị trong ngữ cảnh của GitHub. Các file changelog truyền thống (như `CHANGELOG.md`) dễ tìm kiếm và truy cập hơn.

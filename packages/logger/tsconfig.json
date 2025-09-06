@@ -1,20 +1,20 @@
 {
-  "extends": "@xidoke/typescript-config/base.json",
-  "display": "Logger",
-  "compilerOptions": {
-    "module": "ESNext",
-    "target": "ESNext",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "experimentalDecorators": true,
-    "sourceMap": true
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+	"extends": "@xidoke/typescript-config/base.json",
+	"display": "Logger",
+	"compilerOptions": {
+		"module": "ESNext",
+		"target": "ESNext",
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"]
+		},
+		"experimentalDecorators": true,
+		"sourceMap": true
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules"]
 }

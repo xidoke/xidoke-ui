@@ -162,7 +162,6 @@ update_package_version() {
 
 # Update all packages
 update_package_version "packages/ui" "@xidoke/ui"
-update_package_version "packages/eslint-config" "@xidoke/eslint-config"
 update_package_version "packages/typescript-config" "@xidoke/typescript-config"
 
 # Update apps (if they have version field)

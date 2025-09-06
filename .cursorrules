@@ -101,12 +101,10 @@
 
 ## Code Quality
 
-- **Use consistent formatting** - Follow Prettier/ESLint rules
 - **Write self-documenting code** - Clear variable and function names
 - **Avoid code duplication** - Extract common patterns
 - **Use proper error messages** - Helpful debugging information
 - **Follow DRY principles** - Don't repeat yourself
-- **Use shared ESLint config** - Across all workspaces
 
 ## Integration Guidelines
 

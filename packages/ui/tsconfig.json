@@ -1,8 +1,8 @@
 {
-  "extends": "@xidoke/typescript-config/react-library.json",
-  "compilerOptions": {
-    "lib": ["esnext", "dom"]
-  },
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+	"extends": "@xidoke/typescript-config/react-library.json",
+	"compilerOptions": {
+		"lib": ["esnext", "dom"]
+	},
+	"include": ["."],
+	"exclude": ["dist", "build", "node_modules"]
 }
